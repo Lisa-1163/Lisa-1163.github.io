@@ -1,0 +1,179 @@
+
+*{margin:0;padding: 0;}
+body{
+	font: 14px/1.5 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+a{
+  text-decoration: none;	
+  color: #000;
+}
+ul{
+	list-style: none;
+}
+#fullpage{
+	text-align: center;
+}
+.section{height: 100%;}
+.section1{
+	background-image: url(../img/bj1.jpg);
+}
+#navigation{
+	position:fixed;
+	left:0;
+	top:0;
+	z-index: 9999;
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+}
+.img{
+	background-image: url(../img/monkey.jpg);
+	position: relative;
+	left: -700px;
+	top:0;
+	border-radius: 100%;
+}
+.resume{
+	position: relative;
+	left: -700px;
+	top:0;
+	
+}
+.resume a{
+	color:#643a10;
+}
+.nav ul{
+	list-style: none;
+	float: right;
+	margin-right: 100px;
+	
+}
+.nav ul li{
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	/*background-color: orange;*/
+	padding: 20px;
+}
+.nav ul li a{
+color:#643a10;
+}
+.nav ul li a:hover{
+  color: red;
+}
+
+
+@keyframes around {
+  0% {
+    transform: translateY(800px);
+  }
+  
+  100% {
+   transform: translateY(110px);
+  }
+  
+}
+#intro{
+clear: both;
+font-size: 20px;
+color: #643a10;
+-webkit-animation-name:around;
+-moz-animation-name:around;
+animation-name:around;
+-webkit-animation-duration:1s;
+-moz-animation-duration:1s;
+animation-duration: 1s;
+-webkit-animation-timing-function:ease-in;
+-moz-animation-timing-function:ease-in;
+animation-timing-function: ease-in;
+-webkit-animation-delay:.1s;
+-moz-animation-delay:.1s;
+animation-delay: .1s;
+-webkit-animation-iteration-count:1;
+-moz-animation-iteration-count:1;
+animation-iteration-count:1;/*设置动画播放次数*/
+-webkit-animation-fill-mode:forwards;
+-moz-animation-fill-mode:forwards;
+animation-fill-mode:forwards; /*设置动画时间外属性*/
+
+}
+
+#intro:{animation: move .2s ease .1s;}
+#intro p{padding: 10px;}
+.right-to-left{
+	position:relative;
+	color: #643a10;
+}
+.right-to-left::after{
+            content:'';
+            display:block;
+            width:0;
+            height:3px;
+            position:absolute;
+            right:0;   /*区别就是开始时在右边*/
+            bottom:-10px;
+            background:#000;
+            transition:all 0.3s ease-in-out;
+}
+.right-to-left:hover::after{
+            width:100%;
+}
+.me{
+	border-radius: 100%;
+}
+.btn-down a{
+    display: block;
+	background-image: url(../img/arrow.png);
+	width: 60px;
+	height: 60px;
+	border:none;
+	border-radius: 100%;
+	margin:0 auto;
+	margin-top: 130px;
+}
+
+/*section2定义*/
+.section2{
+	background-image: url(../img/bj2.jpg);
+}
+.about-me{
+     position: relative;
+     left:270px;
+     top: 200px;
+}
+.about-me ul li{
+	width: 950px;
+	height: 100px;
+	line-height: 100px;
+	display: block;
+	font-size: 40px;
+	font-weight:bold;
+}
+
+.one{
+	background:url(../img/bio-icon-1.png) no-repeat 50px -5px ;
+	
+}
+.two{
+	background: url(../img/bio-icon-2.png) no-repeat 50px -5px;
+	margin-left: -800px;
+}
+.three{
+		background: url(../img/bio-icon-3.png) no-repeat 50px -5px;
+        margin-left:1100px; 
+}
+
+/*section3定义*/
+.section3{
+	background-image: url(../img/bj3.jpg);
+}
+/*section4定义*/
+.section4{
+	background-image: url(../img/bj4.jpg);
+}
+/*section5定义*/
+.section5{
+	background-image: url(../img/bj5.jpg);
+}

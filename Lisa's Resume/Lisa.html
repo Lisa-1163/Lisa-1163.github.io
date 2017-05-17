@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />	
+	<title>关于 我</title>
+	<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" type="text/css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/mian.css">    
+</head>
+<body>
+<div id="fullpage">
+    <!-- 第一屏开始 -->
+    <div class="section section1">
+       <div id="navigation">
+           <nav class="nav" role="navigation">
+            <ul id="menu">
+               <li class="img"></li>
+               <li class="resume"><a href="#">简历</a></li>
+               <li class="fade back-home"><a href="#top">首页</li>
+                <li class="nav-about fade fade1"><a href="#about">关于</a></li>
+                <li class="nav-works fade fade4"><a href="#works">作品</a></li>
+                <li class="nav-skill fade fade2"><a href="#skill">能力</a></li>
+                <li class="nav-contact fade fade3"><a href="#contact">联系</a></li>
+            </ul>
+           </nav>
+       </div>
+         
+         <div id="intro">
+         <img class="me" src="../Lisa's Resume/img/me2.jpg">
+         <p class="proverbs"><a href="#" class="right-to-left">生活总是让你翻山越岭，接受挑战的同时也充满惊喜，但我热爱它，就像我需要空气与水。</a></p>
+            <p>我叫谢莎，英文名Lisa</p>
+             <p>一名前端攻城狮</p>
+            <p>xiexiahxxm@163.com</p>
+         </div>
+         <div class="btn-down"><a href="#"></a></div>
+    </div>
+    <!-- 第一屏结束 -->
+    <!-- 第二屏开始 -->
+    <div id="about" class="section section2">
+      <div class="about-me">
+          <ul>
+              <li class="one">11年毕业于武汉工程大学，学历/本科</li>
+              <li class="two">自学前端，以前专业是商务英语</li>
+              <li class="three">热爱前端,同时患有代码强迫症</li>
+          </ul>
+      </div>
+       
+    </div>
+    <!-- 第二屏结束 -->
+    <!-- 第三屏开始 -->
+    <div id="works" class="section section3">
+        <div class="slide">第三屏的第一屏</div>
+        <div class="slide">第三屏的第二屏</div>
+        <div class="slide">第三屏的第三屏</div>
+        <div class="slide">第三屏的第四屏</div>
+    </div>
+    <!-- 第三屏结束 -->
+    <!-- 第四屏开始 -->
+    <div id="skill" class="section section4">
+    第四屏
+    </div>
+    <!-- 第四屏结束 -->
+    <!-- 第五屏开始 -->
+    <div id="contact" class="section section5">第五屏
+    </div>
+    <!-- 第五屏结束 -->
+
+</div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/vendors/jquery.easings.min.js"></script>
+<script type="text/javascript" src="js/move.js"></script>
+
+
+<script>
+	$(function(){
+    $('#fullpage').fullpage({
+            anchors:['page1','page2','page3','page4','page5'],
+            verticalCentered:false,
+            touchSensitivity:20,
+            fixedElements:'#navigation',
+            navigation:true,
+            navigationTooltips:['首页','关于','作品','能力','联系'],
+            tooltipsColor:'#000',
+            afterLoad:function(anchorLink,index){
+                if (index==1) {
+                    alert()
+                }
+               if (index==2) {
+                 move('.two')
+                   .x(800)
+                   .end();
+                move('.three')
+                   .x(-1100)
+                   .end();
+               }
+            }
+            
+            
+
+
+    });
+   
+});
+	
+</script>
+</body>
+</html>
