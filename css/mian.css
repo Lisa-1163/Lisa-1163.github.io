@@ -17,6 +17,7 @@ ul{
 .section{height: 100%;}
 .section1,.section2,.section3,.section4,.section5{
 	background-color: #11a988;
+	
 }
 
 
@@ -185,12 +186,12 @@ animation-fill-mode:forwards; /*设置动画时间外属性*/
 	display: block;
 	width: 110px;
 	height: 30px;
-	border-top: 2px solid red;
+	border-top: 2px solid #800080;
 	position: relative;
 	left: 630px;
 	font-size: 20px;
 	font-weight: bold;
-	color: red;
+	color: #800080;
 	display: none;
 }
 
@@ -222,8 +223,64 @@ animation-fill-mode:forwards; /*设置动画时间外属性*/
 }
 
 /*section3定义*/
+.work-show{
+	width: 1200px;
+	height: 400px;
+	/*border: 1px solid;*/
+	margin:40px auto;
+}
+.work-show ul{
+	overflow: hidden;
+	/*background: red;*/
+	width: 100%;
+	height: 100%;
+	padding: 30px 20px;
+}
+.work-show ul li{
+	width: 300px;
+	height: 250px;
+	float: left;
+	border-radius: 20px;
+	margin: 40px;
+	background: #fff;
+}
 
-
+.work-show ul li:hover{
+	transform:scale(1.1);//设置缩放比例
+    -ms-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    background: #C0C0C0;
+}
+.work-show a h3{
+	font-size: 30px;
+	height: 60px;
+	line-height: 60px;
+	margin-bottom: 10px;
+	color: #800080;
+}
+.work-show a p{
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	text-align:start;
+	text-indent: 20px;
+	padding: 0 10px;
+	color: #1E0908;
+}
+ .link{
+ 	color: #1E0908 ;
+ 	border: 1px solid silver;
+ 	border-radius: 5px;
+ 	width: 200px;
+ 	height: 30px;
+ 	line-height: 30px;
+ 	text-align: center;
+ 	position: relative;
+ 	top: 110px;
+ 	left: 50px;
+ }
 
 
 /*section4定义*/
@@ -267,9 +324,9 @@ animation-fill-mode:forwards; /*设置动画时间外属性*/
 #font1{
 	font-size: 20px;
 	color: #c6c7e6;
+	width: 60px;
 	height: 60px;
 	line-height: 60px;
-	width: 60px;
 	border:none;
 	border-radius: 100%;
 	margin-right: 0;
@@ -303,11 +360,13 @@ animation-fill-mode:forwards; /*设置动画时间外属性*/
 	left: 101px;
 }
 #font2 span{
-	background-color: #fff;
+	background-color:#fff;
 	display: block;
-	font-size: 1px;
+	font-size: 13px;
+	color: #1e0908;
 	width: 40px;
 	height: 40px;
+	display: block;
 	line-height: 40px;
 	border-radius: 100%;
 	-webkit-animation:fontSpan 10s 1s ease infinite;
