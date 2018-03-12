@@ -133,6 +133,8 @@ animation-fill-mode:forwards; /*设置动画时间外属性*/
 	font-size: 18px;
 }
 .me{
+	width:200px;
+	height: 200px;
 	border-radius: 100%;
 }
 .right-to-left{
